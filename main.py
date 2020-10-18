@@ -67,6 +67,7 @@ def check_collison(pipes):
         if pipe.x == bird_rect.x:
             score_sound.play()
             score += 1
+            break
             return True
             
     if bird_rect.top <= -50 or bird_rect.bottom >= 450:

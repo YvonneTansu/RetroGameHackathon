@@ -1,0 +1,9 @@
+pygame~=1.9.6
+
+The main file is `main.py`
+
+To run it:
+- `pip innstall pygame`
+- `python main.py`
+
+Afterwards a pop up window will appear and you may start playing
