@@ -169,7 +169,7 @@ bet_amount = 0
 bet_amount_y = False
 bet_score_y = False
 betting = False
-win = False
+# win = False
     
 while True:
     # Look for all the events happening like moving mouse, closing window or time
@@ -315,10 +315,10 @@ while True:
             bet_exp5_rect = bet_exp5_surface.get_rect(center = (144,350))
             screen.blit(bet_exp5_surface,bet_exp5_rect)
                 
-        if bet_amount_y == False and bet == False and bet_score_y == False and win == False:
+        if bet_amount_y == False and bet == False and bet_score_y == False:
             if betting and score >= bet_score:
                 score += bet_amount
-                win = True
+                # win = True
                 screen.blit(game_over_surface,game_over_rect)
                 high_score = update_score(score,high_score)
                 score_display('game over')
