@@ -27,6 +27,24 @@ def draw_pipes(pipes):
         else:
             flip_pipe = pygame.transform.flip(pipe_surface, False, True)
             screen.blit(flip_pipe, pipe)
+            
+# def create_bonus():
+#     random_bonus_pos = random.choice(bonus_height)
+#     bonus = pipe_surface.get_rect(midbottom = (350,random_bonus_pos-150))
+#     return bonus
+
+# def move_bonuses(pipes):
+#     for pipe in pipes:
+#         pipe.centerx -= 2.5
+#     return pipes
+
+# def draw_bonuses(bonuses):
+#     for bonus in bonuses:
+#         if bonus.top >= 512:
+#             screen.blit(pipe_surface, bonus)
+#         else:
+#             flip_pipe = pygame.transform.flip(pipe_surface, False, True)
+#             screen.blit(flip_pipe, pipe)
     
 def check_collison(pipes):
     for pipe in pipes:
@@ -118,11 +136,16 @@ pygame.time.set_timer(BIRDFLAP,200)
 pipe_surface = pygame.image.load("assets/pipe-green.png").convert()
 #pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
+bonus_list = []
 
 # Using timer to spawn pipe
 SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE,1200) # length of trigger (1200ms): How time time we want to pass since it is going to be triggered
 pipe_height = [200,300,400]
+
+# SPAWNBONUS = pygame.USEREVENT + 2
+# pygame.time.set_timer(SPAWNBONUS,1200) # length of trigger (1200ms): How time time we want to pass since it is going to be triggered
+# bonus_height = [150,200,250,300,350,400]
 
 game_over_surface = pygame.image.load("assets/message.png").convert_alpha()
 game_over_rect = game_over_surface.get_rect(center = (144,256))
@@ -155,6 +178,9 @@ while True:
                 
         if event.type == SPAWNPIPE:
             pipe_list.extend(create_pipe())
+            
+        # if event.type == SPAWNBONUS:
+        #     bonus_list.extend(create_bonus())
             
         if event.type == BIRDFLAP:
             if bird_index < 2:
