@@ -152,7 +152,7 @@ pygame.time.set_timer(SPAWNPIPE,1200) # length of trigger (1200ms): How time tim
 pipe_height = [200,300,400]
 
 SPAWNBONUS = pygame.USEREVENT + 2
-pygame.time.set_timer(SPAWNBONUS,1000) # length of trigger (1200ms): How time time we want to pass since it is going to be triggered
+pygame.time.set_timer(SPAWNBONUS,1000) # length of trigger (1000ms): How time time we want to pass since it is going to be triggered
 bonus_height = [150,200,250,300,350,400]
 
 game_over_surface = pygame.image.load("assets/message.png").convert_alpha()

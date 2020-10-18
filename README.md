@@ -1,14 +1,14 @@
 # Retro Game Hackathon
-# Project: Enhanced Flappy Bird
+## Project: Enhanced Flappy Bird
 
-# Welcome to Flappy Bird (Enhanced)
+### Welcome to Flappy Bird (Enhanced)
 ![](https://drive.google.com/file/d/1k7Xx3UYIh4XxKeh1XjKlC5O0MJlyaxaa/view?usp=sharing)
 ![](https://drive.google.com/file/d/11x-mz23jVl2RFV7WJVwDvnfmW4U2Cls4/view?usp=sharing)
 
-# Link to Github Repository
+### Link to Github Repository
 - [Flappy Bird](https://github.com/YvonneTansu/RetroGameHackathon)
 
-# Files and Run
+### Files and Run
 The main file is `main.py`
 
 To run it:
@@ -17,10 +17,10 @@ To run it:
 
 Afterwards a pop up window will appear and you may start playing
 
-# Note
+### Note
 - This project is fully constructed using `Windows 10` and `python 3.8` along with `Visual Studio Code` as the text editor.
 
-# To play
+### To play
 - First, user will need to choose whether to bet or not.
 - To bet, press button [UP]. Else, [DOWN] to exit the betting screen.
 - After pressing [UP], user has to input a betting score by using [LEFT] to increment by 1 and [RIGHT] to decrement by 1.
