@@ -2,8 +2,8 @@
 ## Project: Enhanced Flappy Bird
 
 ### Welcome to Flappy Bird (Enhanced)
-![](https://drive.google.com/file/d/1k7Xx3UYIh4XxKeh1XjKlC5O0MJlyaxaa/view?usp=sharing)
-![](https://drive.google.com/file/d/11x-mz23jVl2RFV7WJVwDvnfmW4U2Cls4/view?usp=sharing)
+- [Game Screen](https://drive.google.com/file/d/1k7Xx3UYIh4XxKeh1XjKlC5O0MJlyaxaa/view?usp=sharing)
+- [Bet Screen](https://drive.google.com/file/d/11x-mz23jVl2RFV7WJVwDvnfmW4U2Cls4/view?usp=sharing)
 
 ### Link to Github Repository
 - [Flappy Bird](https://github.com/YvonneTansu/RetroGameHackathon)
