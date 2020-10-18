@@ -42,9 +42,10 @@ It is simple to fork a github repo - follow along for further details.
 - As you work don't forget to `git commit` and `git push`!
 
 ## Example Projects & Templates
-An example template has been provided for those new to hackathons.
+Some example templates are sohwn below. You may either use these for inspiration for how to code your own game or as a starting point for your game (you may take one of these and expand on it, although it might be hard to think of as much to add as you could if you started from scratch).
 
 - [Python Pyxel](https://github.com/HiruNya/DSC-RetroHackathon-Template)
+- [Minesweeper and 2048](https://github.com/PeterGoedeke/small-games/tree/master)
 
 ## Prizes
 ### Creativity
@@ -80,12 +81,7 @@ This competition is intended to be accessible for audiences newer to programming
 
 
 ### Community Discord
-Come see us on the DSC UoA discord, where we have mentors and judges available to help with any coding or git problem.
-
-<a href="https://discord.gg/7cQpg4q">
-    https://discord.gg/7cQpg4q<br/>
-    <img height="50px"; src="https://www.freepnglogos.com/uploads/discord-logo-png/concours-discord-cartes-voeux-fortnite-france-6.png">
-</a>
+Come see us in the #workshops channel of the DSC Adelaide discord server, where we have mentors and judges available to help with any coding or git problems. https://discord.gg/7cQpg4q
 
 
 # About Us
