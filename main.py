@@ -318,10 +318,11 @@ while True:
         if bet_amount_y == False and bet == False and bet_score_y == False:
             if betting and score >= bet_score:
                 score += bet_amount
-                # win = True
-                screen.blit(game_over_surface,game_over_rect)
-                high_score = update_score(score,high_score)
-                score_display('game over')
+                betting = False
+                # # win = True
+                # screen.blit(game_over_surface,game_over_rect)
+                # high_score = update_score(score,high_score)
+                # score_display('game over')
             else:
                 screen.blit(game_over_surface,game_over_rect)
                 high_score = update_score(score,high_score)
