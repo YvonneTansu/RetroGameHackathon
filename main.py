@@ -52,7 +52,7 @@ def draw_bonuses(bonuses):
 def check_food(bonuses):
     global score
     for bonus in bonuses:
-        if bonus.y == bird_rect.y <= bonus.bottom and bird_rect.x == bonus.x:
+        if bonus.top <= bird_rect.y <= bonus.bottom and bonus.x == 50:
             score_sound.play()
             score += 1
             return True
@@ -169,6 +169,7 @@ bet_amount = 0
 bet_amount_y = False
 bet_score_y = False
 betting = False
+win = False
     
 while True:
     # Look for all the events happening like moving mouse, closing window or time
@@ -272,12 +273,8 @@ while True:
             bet_rect = bet_surface.get_rect(center = (144,200))
             screen.blit(bet_surface,bet_rect)
             
-            bet_exp1_surface = game_font.render(str("Bet?"), True, (255,255,255)) # antialias text looks sharper
-            bet_exp1_rect = bet_exp1_surface.get_rect(center = (144,250))
-            screen.blit(bet_exp1_surface,bet_exp1_rect)
-            
             bet_exp2_surface = game_font.render(str("Bet Score <= Bet Amount/5"), True, (255,255,255)) # antialias text looks sharper
-            bet_exp2_rect = bet_exp2_surface.get_rect(center = (144,300))
+            bet_exp2_rect = bet_exp2_surface.get_rect(center = (144,250))
             screen.blit(bet_exp2_surface,bet_exp2_rect)
             
         if bet_score_y:
@@ -318,9 +315,10 @@ while True:
             bet_exp5_rect = bet_exp5_surface.get_rect(center = (144,350))
             screen.blit(bet_exp5_surface,bet_exp5_rect)
                 
-        if bet_amount_y == False and bet == False and bet_score_y == False:
+        if bet_amount_y == False and bet == False and bet_score_y == False and win == False:
             if betting and score >= bet_score:
                 score += bet_amount
+                win = True
                 screen.blit(game_over_surface,game_over_rect)
                 high_score = update_score(score,high_score)
                 score_display('game over')
