@@ -52,9 +52,10 @@ def draw_bonuses(bonuses):
 def check_food(bonuses):
     global score
     for bonus in bonuses:
-        if bonus.top <= bird_rect.y <= bonus.bottom and bonus.x == 50:
+        if bird_rect.colliderect(bonus):
             score_sound.play()
             score += 1
+            bonuses.remove(bonus)
             return True
     return False
 
@@ -260,7 +261,7 @@ while True:
         # if bonus_score:
         #     score_sound.play()
         #     score += 1
-            
+        betting = True
         score_display('main game')
         
     else:
